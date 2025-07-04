@@ -70,6 +70,16 @@ npm run tauri build
 - When download stops, a countdown will appear to put the device to sleep.
 - Use the "Stop Monitoring" button to pause monitoring at any time.
 
+## Important Note: Disable Hibernation
+
+For NetNap's sleep feature to work correctly, you must disable hibernation on your device. On Windows, open Command Prompt as administrator and run:
+
+```
+powercfg /hibernate off
+```
+
+This ensures that the system will enter sleep mode instead of hibernation when triggered by NetNap.
+
 ## Project Structure
 
 ```
