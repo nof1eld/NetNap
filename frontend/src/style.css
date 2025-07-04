@@ -1,0 +1,225 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+body {
+  background: #23272e;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 0.3s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #fff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.desktop-window {
+  width: 370px;
+  height: 480px;
+  background: #181a20;
+  box-shadow: 0 8px 32px #000a, 0 1.5rem 2rem #2228;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden;
+  border: 1.5px solid #23272e;
+}
+.desktop-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #23272e;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1.5px solid #23272e;
+}
+.desktop-icon {
+  width: 2rem;
+  height: 2rem;
+  filter: drop-shadow(0 0 4px #2d3748);
+}
+.desktop-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #f1f3f7;
+  letter-spacing: 1px;
+}
+.speed-section {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.2rem 0 1.2rem;
+}
+.speed-label {
+  color: #b0b8c1;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+.speed-digital {
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-size: 2.5rem;
+  color: #00e676;
+  background: #101217;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  box-shadow: 0 2px 12px #00e67622;
+  letter-spacing: 2px;
+  font-weight: 700;
+  min-width: 210px;
+  text-align: center;
+}
+.status-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  padding: 0 2.2rem;
+}
+.status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.13rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #23272e;
+}
+.status-row:last-child {
+  border-bottom: none;
+}
+.status-label {
+  color: #b0b8c1;
+  font-weight: 500;
+  font-size: 1.08rem;
+  letter-spacing: 0.2px;
+}
+.status-value {
+  font-weight: 600;
+  font-size: 1.13rem;
+  color: #f1f3f7;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+.downloading-value {
+  font-weight: 700;
+  font-size: 1.13rem;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.downloading-value.true {
+  color: #00e676;
+}
+.downloading-value.false {
+  color: #ff5252;
+}
+
+.countdown-row {
+  justify-content: flex-end;
+  padding-top: 0.2rem;
+}
+.countdown-value {
+  color: #ff5252;
+  font-weight: 700;
+  font-size: 1.13rem;
+  letter-spacing: 1px;
+  min-width: 2.5rem;
+  text-align: right;
+}
+.control-btn {
+  width: calc(100% - 3rem);
+  margin: 1.2rem 1.5rem;
+  padding: 0.9rem 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background: #ff5252;
+  color: #181a20;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #ff525233;
+}
+.control-btn.stopped {
+  background: #00e676;
+  color: #fff;
+  box-shadow: 0 2px 8px #00e67633;
+}
+.control-btn:active {
+  filter: brightness(0.95);
+}

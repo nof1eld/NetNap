@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=380, initial-scale=1.0" />
+    <title>Network Monitor</title>
+    <script type="module" src="/src/main.js" defer></script>
+  </head>
+  <body>
+    <div class="desktop-window">
+      <header class="desktop-header">
+        <span class="desktop-title">Network Napper 💤</span>
+      </header>
+      <section class="speed-section">
+        <div class="speed-label">Current Speed</div>
+        <div class="speed-digital" id="speed">0.00 KB/s</div>
+      </section>
+      <section class="status-section">
+        <div class="status-row">
+          <span class="status-label">Status</span>
+          <span class="status-value" id="status">Idle</span>
+        </div>
+        <div class="status-row">
+          <span class="status-label">Downloading</span>
+          <span class="downloading-value" id="downloading">Idle</span>
+        </div>
+        <div
+          class="status-row countdown-row"
+          id="countdown-row"
+          style="display: none"
+        >
+          <span class="status-label">Countdown</span>
+          <span class="countdown-value" id="countdown"></span>
+        </div>
+      </section>
+      <button class="control-btn" id="toggle-btn">Stop Monitoring</button>
+    </div>
+  </body>
+</html>
