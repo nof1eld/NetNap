@@ -65,9 +65,9 @@ npm run tauri build
 
 ## Usage
 
-- Launch NetNap, the app will monitor your network speed.
-- Start your download.
-- When download stops, a countdown will appear to put the device to sleep.
+- Launch NetNap, the app will start monitoring your network speed.
+- Start your download. **Important:** Make sure to close any other sources of downloads (like YouTube or any website/app that may consume data) and keep only one source.
+- NetNap will detect that you started downloading, When download stops, a countdown will appear to put the device to sleep.
 - Use the "Stop Monitoring" button to pause monitoring at any time.
 
 ## Important Note: Disable Hibernation
