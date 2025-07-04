@@ -19,9 +19,9 @@ _The network speed monitoring logic is implemented in Rust, adapted from the [ne
 
 ![Main UI](assets/Screenshot3.png)
 
-![Download Detected](assets/Screenshot2.png)
+<img src="assets/Screenshot2.png" alt="Download Detected" width="300"/>
 
-![Sleep Triggered](assets/Screenshot1.png)
+<img src="assets/Screenshot1.png" alt="Sleep Triggered" width="300"/>
 
 ## Getting Started
 
