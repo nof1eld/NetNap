@@ -15,13 +15,12 @@ NetNap continuously monitors your network speed in the background. When it detec
 
 _The network speed monitoring logic is implemented in Rust, adapted from the [net-speed-monitor](https://github.com/nof1eld/net-speed-monitor) project._
 
-## Screenshots
+## Preview
 
-![Main UI](assets/Screenshot3.png)
+![Preview](assets/netnap-preview.gif)
 
-<img src="assets/Screenshot2.png" alt="Download Detected" width="300"/>
 
-<img src="assets/Screenshot1.png" alt="Sleep Triggered" width="300"/>
+
 
 ## Getting Started
 
